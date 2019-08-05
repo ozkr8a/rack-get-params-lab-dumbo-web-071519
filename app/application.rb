@@ -29,6 +29,7 @@ class Application
     
     if req.path.match(/add/)
       to_add = req.params["items"]
+      if @@items.include? = to_add
     end
 
     resp.finish
