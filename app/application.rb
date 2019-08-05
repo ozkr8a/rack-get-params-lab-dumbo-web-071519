@@ -31,7 +31,7 @@ class Application
       to_add = req.params["items"]
       if @@items.include? = to_add
         @@cart << to_add
-        resp.write "item #{to_add} has been added"
+        resp.write "added #{to_add}"
         
     end
 
