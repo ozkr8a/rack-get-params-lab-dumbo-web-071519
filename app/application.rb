@@ -18,7 +18,7 @@ class Application
       
     elsif @@cart == []
       resp.write "Your cart is empty"
-      if req.path.match(/cart/)
+    elsif req.path.match(/cart/)
       @@cart.each do |item|
       resp.write "#{item}\n"
       end
