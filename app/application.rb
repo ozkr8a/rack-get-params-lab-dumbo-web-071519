@@ -28,7 +28,7 @@ class Application
     end
     
     if req.path.match(/add/)
-      
+      to_add = 
     end
 
     resp.finish
