@@ -32,6 +32,8 @@ class Application
       if @@items.include? = to_add
         @@cart << to_add
         resp.write "added #{to_add}"
+      else
+        resp.write "item"
         
     end
 
