@@ -17,8 +17,8 @@ class Application
       resp.write handle_search(search_term)
     elsif
       resp.write "Path Not Found\n"
-    end
-    if @@cart == []
+  
+    elsifif @@cart == []
       resp.write "Your cart is empty"
       if req.path.match(/cart/)
       @@cart.each do |item|
@@ -31,7 +31,6 @@ class Application
         resp.write "added #{to_add}"
       else
         resp.write "We don't have that item"
-      end
     end
 
     resp.finish
