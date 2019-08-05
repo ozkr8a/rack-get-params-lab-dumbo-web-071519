@@ -33,7 +33,7 @@ class Application
         @@cart << to_add
         resp.write "added #{to_add}"
       else
-        resp.write "item"
+        resp.write "We don't have that item"
         
     end
 
